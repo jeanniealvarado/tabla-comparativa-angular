@@ -1,0 +1,15 @@
+<h2>Table Comparison</h2>
+<table *ngIf="data">
+  <thead>
+    <tr>
+      <th>Institucion Financiera</th>
+      <th>Instrumento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{ item.institucionFinanciera }}</td>
+      <td>{{ item.instrumento[0].debito }}</td>
+    </tr>
+  </tbody>
+</table>
